@@ -1,83 +1,95 @@
 /* ********* */
 /* @FOOTER */
 /* ********* */
-// Colores
+
+// CENTRAR CONTENIDO FOOTER
+.centrar{
+    max-width: $anchoMax;
+    margin: 0 auto;
+}
+
+// SECCIÓN DE ENLACES
 .links{
+    // Color de fondo
     background-color: $color_footer_scLinks;
-}
-.logoIdiomas{
-    background-color: $color_footer_scLogo;
-}
-.terminosSocial{
-    background-color: $color_footer_scTerminos;
-}
 
-// 
-
-.links{
-
+    // Links contenido
     &__contenido{
+        display: flex;
+        justify-content: space-between;
         padding: 1rem;
+
+        // Espaciado entre elementos lista
+        &--lista {
+            line-height: $interlineadoLinks;
+        }
     }
 }
 
-.links__contenido {
-    display: flex;
-    justify-content: space-between;
-
-    &--lista {
-        line-height: $interlineadoLinks;
-    }
-}
-
-
-.links__mapaSitio {
-    border: none;
-    color: $color_footer_texto;
-}
-
+// Listas del mapa del sitio
 .titulo {
     color: $color_footer_titulo;
 }
 
-.logoIdiomas{
+.links__mapaSitio {
+    background-color: transparent;
+    border: none;
+    color: $color_footer_texto;
+}
 
+// SECCIÓN DE IDIOMAS
+.logoIdiomas{
+    // Color de fondo
+    background-color: $color_footer_scLogo;
+
+    // Contenido
     &__contenido{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding: 1rem;
     }
 
+     // Logo de idiomas
+     &__img {
+        width: 80px;
+        height: 80px;
+    }
+
+    // Dirección
+    &__direccion {
+        padding-left: 1.25rem;
+        color: $color_footer_texto
+    }
+
+    // Copyright
+    &__copyright {
+        display: flex;
+        margin: 0;
+    }
+
+    // Select idiomas
     &__select {
         width: 9.375rem;
         padding: 5px;
         border: 1px solid $color_footer_scTerminos;
         color: $color_footer_texto;
     }
+
 }
 
+// SECCIÓN DE TERMINOS Y RRSS
 .terminosSocial{
+    // Color de fondo
+    background-color: $color_footer_scTerminos;
 
+    // Terminos y condiciones
     &__contenido{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding: 1rem;
     }
-}
-
-.centrar{
-    max-width: $anchoMax;
-    margin: 0 auto;
-}
-
-
-// Terminos y condiciones
-.terminosSocial__contenido {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logoIdiomas__contenido {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 // Políticas
@@ -91,22 +103,6 @@
     > *{
         display: block;
     }
-}
-
-// Logo Idiomas
- .logoIdiomas__copyright {
-     display: flex;
-     margin: 0;
- }
-
- .logoIdiomas__img {
-    width: 80px;
-    height: 80px;
-}
-
-.logoIdiomas__direccion {
-    padding-left: 1.25rem;
-    color: $color_footer_texto
 }
 
 

@@ -383,22 +383,14 @@ html {
 /* ********* */
 /* @FOOTER */
 /* ********* */
+.centrar {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
 .links {
   background-color: #FFFFFF;
 }
-
-.logoIdiomas {
-  background-color: #F3F3FD;
-}
-
-.terminosSocial {
-  background-color: #C9CEEA;
-}
-
-.links__contenido {
-  padding: 1rem;
-}
-
 .links__contenido {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -406,22 +398,50 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 1rem;
 }
 .links__contenido--lista {
   line-height: 2.5rem;
-}
-
-.links__mapaSitio {
-  border: none;
-  color: #7075a2;
 }
 
 .titulo {
   color: #394083;
 }
 
+.links__mapaSitio {
+  background-color: transparent;
+  border: none;
+  color: #7075a2;
+}
+
+.logoIdiomas {
+  background-color: #F3F3FD;
+}
 .logoIdiomas__contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1rem;
+}
+.logoIdiomas__img {
+  width: 80px;
+  height: 80px;
+}
+.logoIdiomas__direccion {
+  padding-left: 1.25rem;
+  color: #7075a2;
+}
+.logoIdiomas__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
 }
 .logoIdiomas__select {
   width: 9.375rem;
@@ -430,37 +450,20 @@ html {
   color: #7075a2;
 }
 
+.terminosSocial {
+  background-color: #C9CEEA;
+}
 .terminosSocial__contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1rem;
-}
-
-.centrar {
-  max-width: 1366px;
-  margin: 0 auto;
-}
-
-.terminosSocial__contenido {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.logoIdiomas__contenido {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .politicas {
@@ -476,23 +479,6 @@ html {
 }
 .politicas > * {
   display: block;
-}
-
-.logoIdiomas__copyright {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0;
-}
-
-.logoIdiomas__img {
-  width: 80px;
-  height: 80px;
-}
-
-.logoIdiomas__direccion {
-  padding-left: 1.25rem;
-  color: #7075a2;
 }
 
 a {
