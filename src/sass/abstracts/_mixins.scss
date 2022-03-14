@@ -1,3 +1,14 @@
 /* ********* */
 /* @MIXINS */
 /* ********* */
+
+// Mixin para Flexbox
+@mixin displayFlex ($direccion, $horizontal, $vertical) {
+
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $horizontal;
+    align-items: $vertical;
+}
+
+

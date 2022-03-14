@@ -15,8 +15,7 @@
 
     // Links contenido
     &__contenido{
-        display: flex;
-        justify-content: space-between;
+        @include displayFlex(row, space-between, null);
         padding: 1rem;
 
         // Espaciado entre elementos lista
@@ -28,13 +27,15 @@
 
 // Listas del mapa del sitio
 .titulo {
+    font-size: map-get($fuenteSize,h3);
     color: $color_footer_titulo;
 }
 
 .links__mapaSitio {
     background-color: transparent;
-    border: none;
     color: $color_footer_texto;
+    border: none;
+    appearance: none;
 }
 
 // SECCIÓN DE IDIOMAS
@@ -44,9 +45,7 @@
 
     // Contenido
     &__contenido{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include displayFlex(row, space-between, center);
         padding: 1rem;
     }
 
@@ -59,7 +58,8 @@
     // Dirección
     &__direccion {
         padding-left: 1.25rem;
-        color: $color_footer_texto
+        color: $color_footer_texto;
+        font-size: map-get($fuenteSize,p);
     }
 
     // Copyright
@@ -85,9 +85,7 @@
 
     // Terminos y condiciones
     &__contenido{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include displayFlex(row, space-between, center);
         padding: 1rem;
     }
 }
@@ -103,17 +101,20 @@
     > *{
         display: block;
     }
+
+    > a {
+        color: $color_footer_texto;
+    }
 }
 
-
 // Redes Sociales
-a {
-    text-decoration: none;
-    color: $color_footer_texto;
+.redesSociales {
+
     svg {
         width: 32px;
         height: 32px;
         fill: $color_footer_texto;
     }
 }
+
 

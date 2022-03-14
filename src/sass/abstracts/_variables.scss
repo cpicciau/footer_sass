@@ -14,14 +14,22 @@ $color_footer_titulo: #394083;
 $anchoMax : 1366px;
 
 // Fuentes
-$fuente: "Calibri";
+$fuenteFooter: "Calibri";
+
+// Tamaños fuentes
+$fuenteSize: (
+    // Títulos
+    h3: 1.25rem,
+    // Texto
+    p: 1.125rem
+);
 
 // Interlineado
 $interlineadoLinks: 2.5rem;
 
 // Redes Sociales
 // iconos
-$redes: (
+$redesIconos: (
     facebook: "../assets/img/svg/facebook.svg",
     twitter: "../assets/img/svg/twitter.svg",
     instagram: "../assets/img/svg/instagram.svg",

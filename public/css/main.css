@@ -355,6 +355,10 @@ li {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* ********* */
 /* @VARIABLES */
 /* ********* */
@@ -395,6 +399,10 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -405,13 +413,17 @@ html {
 }
 
 .titulo {
+  font-size: 1.25rem;
   color: #394083;
 }
 
 .links__mapaSitio {
   background-color: transparent;
-  border: none;
   color: #7075a2;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .logoIdiomas {
@@ -421,6 +433,10 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -436,6 +452,7 @@ html {
 .logoIdiomas__direccion {
   padding-left: 1.25rem;
   color: #7075a2;
+  font-size: 1.125rem;
 }
 .logoIdiomas__copyright {
   display: -webkit-box;
@@ -457,6 +474,10 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -480,12 +501,11 @@ html {
 .politicas > * {
   display: block;
 }
-
-a {
-  text-decoration: none;
+.politicas > a {
   color: #7075a2;
 }
-a svg {
+
+.redesSociales svg {
   width: 32px;
   height: 32px;
   fill: #7075a2;
